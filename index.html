@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1>Company</h1>
+        <div class="background"></div>
+    </header>
+    <nav class="nav">
+
+
+        <div class="nav__items">
+            <a class="nav__item" href="#item1">O mnie</a>
+            <a class="nav__item" href="#item2">Oferta</a>
+            <a class="nav__item" href="#item3">Opinie</a>
+            <a class="nav__item" href="#item4">Kontakt</a>
+        </div>x
+
+        <button class="burger-btn">
+            <div class="burger-btn__bars"></div>
+        </button>
+
+    </nav>
+
+    <main>
+        <section class="About me section">
+            <h2>O mnie</h2>
+        </section>
+        <section class="oferts section">
+            <h2>Oferty</h2>
+        </section>
+        <section class="opinions section">
+            <h2>Opinie</h2>
+        </section>
+        <section class="contact section">
+            <h2>Kontakt</h2>
+            <form action="mail.php" method="post" class="contact-form">
+
+                <div class="contact-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="contact-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="contact-box">
+                    <label for="msg">Message:</label>
+                    <textarea name="msg" id="msg" required></textarea>
+                </div>
+
+                <button>Send</button>
+
+            </form>
+
+            <p class="msg-status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer wrapper" id="contact">
+            <div class="footer__logo logo">
+                <img class="footer__logo-icon" src="./img/hexagon.svg" alt="comapny logo">
+                <p class="footer__logo-name">company name</p>
+            </div>
+
+            <table class="footer__info">
+                <tr class="footer__info-column">
+                    <th><a href="#">header 1</a></th>
+                    <th><a href="#">header 2</a></th>
+                    <th><a href="#">header 3</a></th>
+                </tr>
+                <tr class="footer__info-column">
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                </tr>
+                <tr class="footer__info-column">
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                </tr>
+                <tr class="footer__info-column">
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                </tr>
+            </table>
+        </div>
+        <p class="footer__company-name">&copy; <span class="footer__company-name-year" id="footer__year"> </span>
+            Group Company Ltd.</p>
+    </footer>
+
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

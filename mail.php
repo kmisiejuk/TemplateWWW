@@ -2,7 +2,7 @@
 
 $name = $_POST["name"]; // input name="name"
 $from = $_POST["email"]; // input name="email"
-$subject = "Wiadomość z formularza na stronie XYZ";
+$subject = "Wiadomość z formularza kontaktowego";
 $to = "kmisiejuk@op.pl"; // adres, na który ma zostać wysłany mail
 $message = $_POST["msg"]; // textarea name="msg"
 

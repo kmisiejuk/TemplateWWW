@@ -7,21 +7,29 @@
     <title>Template website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,600;1,700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <h1>Company</h1>
+        <div class="header-text">
+            <h1>Rafał Krupa</h1>
+            <p>pośrednictwo ubezpieczeniowe</p>
+        </div>ext
         <div class="background"></div>
     </header>
     <nav class="nav">
 
 
         <div class="nav__items">
-            <a class="nav__item" href="#item1">O mnie</a>
-            <a class="nav__item" href="#item2">Oferta</a>
-            <a class="nav__item" href="#item3">Opinie</a>
-            <a class="nav__item" href="#item4">Kontakt</a>
+            <a class="nav__item" href="#about-me">O mnie</a>
+            <a class="nav__item" href="#oferts">Oferta</a>
+            <a class="nav__item" href="#opinions">Opinie</a>
+            <a class="nav__item" href="#contact">Kontakt</a>
         </div>
 
         <button class="burger-btn">
@@ -31,16 +39,74 @@
     </nav>
 
     <main>
-        <section class="About me section">
+        <section class="About me section" id="about-me">
             <h2>O mnie</h2>
+            <h3>Firmy z jakimi wspołpracujemy</h3>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="allianz color"></div>
+                    <div class="uniqa color"></div>
+                    <div class="tuz color"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="unum color"></div>
+                    <div class="generali color"></div>
+                    <div class="warta color"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hestia color"></div>
+                    <div class="pzu color"></div>
+                    <div class="compensa color"></div>
+                </div>
+            </div>
         </section>
-        <section class="oferts section">
+        <section class="oferts section" id="oferts">
             <h2>Oferty</h2>
+
+            <div class="accordion">
+                <div class="accordion-box">
+                    <button class="accordion-btn">
+                        <div class="accordion-icon">❄️</div>opcja 1
+                    </button>
+                    <div class="accordion-info">
+                        <p class="accordion-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellendus
+                            necessitatibus, quae quod labore laborum ipsum corporis. Repellendus sint optio animi!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-box">
+                    <button class="accordion-btn">
+                        <div class="accordion-icon">🛒</div>
+                        opcja 2
+                    </button>
+                    <div class="accordion-info">
+                        <p class="accordion-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellendus
+                            necessitatibus, quae quod labore laborum ipsum corporis. Repellendus sint optio animi!</p>
+                        <p class="accordion-info-text">Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-box">
+                    <button class="accordion-btn">
+                        <div class="accordion-icon">🌏</div>
+                        opcja 3
+                    </button>
+                    <div class="accordion-info">
+                        <p class="accordion-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellendus
+                            necessitatibus, quae quod labore laborum ipsum corporis. Repellendus sint optio animi!</p>
+                        <p class="accordion-info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
-        <section class="opinions section">
+        <section class="opinions section" id="opinions">
             <h2>Opinie</h2>
         </section>
-        <section class="contact section">
+        <section class="contact section" id="contact">
             <h2>Kontakt</h2>
             <form action="mail.php" method="post" class="contact-form">
 
@@ -99,7 +165,7 @@
         <p class="footer__company-name">&copy; <span class="footer__company-name-year" id="footer__year"> </span>
             Group Company Ltd.</p>
     </footer>
-
+    <script src="akordeon.js"></script>
     <script src="footer.js"></script>
     <script src="script.js"></script>
 </body>
